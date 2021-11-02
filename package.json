@@ -9,7 +9,8 @@
     "hardhat": "^2.3.0"
   },
   "dependencies": {
-    "@openzeppelin/hardhat-upgrades": "^1.8.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "@openzeppelin/hardhat-upgrades": "^1.11.0",
     "hardhat-deploy": "^0.7.9"
   }
 }

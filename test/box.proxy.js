@@ -8,7 +8,6 @@ describe('Box (proxy)', function () {
     Box = await ethers.getContractFactory("Box")
     box = await upgrades.deployProxy(Box, [42], { initializer: 'store' })
   })
-
   it('retrieve returns a value previously initialized', async function () {
     // Test if the returned value is the same one
     // Note that we need to use strings to compare the 256 bit integers

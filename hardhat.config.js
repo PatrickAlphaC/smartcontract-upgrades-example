@@ -1,7 +1,7 @@
 require("@nomiclabs/hardhat-waffle")
 require("@nomiclabs/hardhat-ethers")
 require('@openzeppelin/hardhat-upgrades')
-require('hardhat-deploy')
+require("@nomiclabs/hardhat-etherscan")
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -43,7 +43,7 @@ module.exports = {
       saveDeployments: true,
     },
   },
-  solidity: "0.6.6",
+  solidity: "0.8.2",
   namedAccounts: {
     deployer: {
       default: 0, // here this will by default take the first account as deployer
@@ -52,6 +52,11 @@ module.exports = {
     feeCollector: {
       default: 1
     }
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey: ETHERSCAN_API_KEY
   },
 }
 

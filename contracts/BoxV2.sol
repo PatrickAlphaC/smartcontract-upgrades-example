@@ -1,6 +1,6 @@
 // contracts/BoxV2.sol
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.6.0;
+pragma solidity ^0.8.2;
  
 contract BoxV2 {
     uint256 private value;
