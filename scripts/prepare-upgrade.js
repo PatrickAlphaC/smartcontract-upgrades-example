@@ -1,7 +1,6 @@
 // scripts/prepare_upgrade.js
 async function main() {
-    const proxyAddress = '0xC780fd97e99fb6203C6bf72b2B914afc9288059d'
-
+    const proxyAddress = 'FILL_ME_IN'
     const BoxV2 = await ethers.getContractFactory("BoxV2")
     console.log("Preparing upgrade...")
     const boxV2Address = await upgrades.prepareUpgrade(proxyAddress, BoxV2)
